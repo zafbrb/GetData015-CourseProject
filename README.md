@@ -90,7 +90,7 @@ The script starts after the comment line ##-----Start of main script ------
 10. Writes out the dataset "avgVarGrouped_Dict.txt" to disk
 
 The script will write progress messages to the console
-'''R
+```R
 > source('G:/Learning/Big Data Samples/getdata-014/run_analysis.R')
 *** Starting Data Prep for getdata-014 Course Project *** 
 trying URL 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
@@ -135,7 +135,7 @@ downloaded 59.7 Mb
 [F] Written dictionary output to file avgVarGrouped_Dict.txt in working directory 
 
 ***Data Prep completed *** 
-'''
+```
 
 ##Running the script manually
 
