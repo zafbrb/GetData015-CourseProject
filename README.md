@@ -90,26 +90,26 @@ The script starts after the comment line ##-----Start of main script ------
 10. Writes out the dataset "avgVarGrouped_Dict.txt" to disk
 
 The script will write progress messages to the console
-
-'> source('G:/Learning/Big Data Samples/getdata-014/run_analysis.R')
+'''R
+> source('G:/Learning/Big Data Samples/getdata-014/run_analysis.R')
 *** Starting Data Prep for getdata-014 Course Project *** 
 trying URL 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
 Content type 'application/zip' length 62556944 bytes (59.7 Mb)
 opened URL
-downloaded 59.7 Mb'
+downloaded 59.7 Mb
 
-'[A] Unpacked date source files into  UCI HAR Dataset'
-'[1] Completed file names using  UCI HAR Dataset/test as work directory and test as type'
-'[2] Loaded Features file... 561 rows'
-'[3] Loaded Activity labels file... 6 rows'
-'[4] Loaded Subject file... 2947 rows'
-'[5] Loaded y data file (activities)... 2947 rows'
-'[6] Concatenated Activity descriptions to the y_file...'
-'[7] Loaded X data file - Fixed names - Data Dictionary created... 2947 rows'
-'[8] Selected mean and std columns - Updated global dictionary...'
-'[9] Assembled the file...'
-'[10] Added the source indicator...'
-'[10] Shape is 2947 rows and 70 cols'
+[A] Unpacked date source files into  UCI HAR Dataset
+[1] Completed file names using  UCI HAR Dataset/test as work directory and test as type
+[2] Loaded Features file... 561 rows
+[3] Loaded Activity labels file... 6 rows
+[4] Loaded Subject file... 2947 rows
+[5] Loaded y data file (activities)... 2947 rows
+[6] Concatenated Activity descriptions to the y_file...
+[7] Loaded X data file - Fixed names - Data Dictionary created... 2947 rows
+[8] Selected mean and std columns - Updated global dictionary...
+[9] Assembled the file...
+[10] Added the source indicator...
+[10] Shape is 2947 rows and 70 cols
 
 [B] Created test_df containing test data 
 [1] Completed file names using  UCI HAR Dataset/train as work directory and train as type 
@@ -135,7 +135,7 @@ downloaded 59.7 Mb'
 [F] Written dictionary output to file avgVarGrouped_Dict.txt in working directory 
 
 ***Data Prep completed *** 
-  '
+'''
 
 ##Running the script manually
 
