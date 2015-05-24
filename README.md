@@ -9,7 +9,7 @@ This respository contains the submitted course material required for the course 
 
 This course material comprise a R code script **"run_Analysis.R"**, as well as a code book describing the data and the steps taken to create it.
 
-In order to run this analysis you will need **R version 3.1.2  or greater**, as well as access to the **internet**
+In order to run this analysis you will need **R version 3.1.2  or greater**, as well as access to the **internet**. **Watch out: This script has only been tested and run from RStudio** 
 
 ##Instructions
 1. Copy the **run_Analysis.R** to your R working directory
@@ -91,8 +91,53 @@ The script starts after the comment line ##-----Start of main script ------
 
 The script will write progress messages to the console
 
+'   
+> source('G:/Learning/Big Data Samples/getdata-014/run_analysis.R')
+*** Starting Data Prep for getdata-014 Course Project *** 
+trying URL 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
+Content type 'application/zip' length 62556944 bytes (59.7 Mb)
+opened URL
+downloaded 59.7 Mb
 
+[A] Unpacked date source files into  UCI HAR Dataset 
 
+[1] Completed file names using  UCI HAR Dataset/test as work directory and test as type 
+[2] Loaded Features file... 561 rows 
+[3] Loaded Activity labels file... 6 rows 
+[4] Loaded Subject file... 2947 rows 
+[5] Loaded y data file (activities)... 2947 rows 
+[6] Concatenated Activity descriptions to the y_file... 
+[7] Loaded X data file - Fixed names - Data Dictionary created... 2947 rows 
+[8] Selected mean and std columns - Updated global dictionary... 
+[9] Assembled the file... 
+[10] Added the source indicator... 
+[10] Shape is 2947 rows and 70 cols 
+
+[B] Created test_df containing test data 
+[1] Completed file names using  UCI HAR Dataset/train as work directory and train as type 
+[2] Loaded Features file... 561 rows 
+[3] Loaded Activity labels file... 6 rows 
+[4] Loaded Subject file... 7352 rows 
+[5] Loaded y data file (activities)... 7352 rows 
+[6] Concatenated Activity descriptions to the y_file... 
+[7] Loaded X data file - Fixed names - Data Dictionary created... 7352 rows 
+[8] Selected mean and std columns - Updated global dictionary... 
+[9] Assembled the file... 
+[10] Added the source indicator... 
+[10] Shape is 7352 rows and 70 cols 
+
+[C] Created train_df containing train data 
+[D] Created merged dataset - stacked_df containing train and test data  
+[D] complete_df -  10299 rows and 70 cols 
+
+[E] Tidy dataset avgVarGrouped created containing avg of variables by Subject and activity ID 
+[E] avgVarGrouped -  180 rows and 68 cols 
+
+[F] Written final output to file avgVarGrouped.txt in working directory 
+[F] Written dictionary output to file avgVarGrouped_Dict.txt in working directory 
+
+***Data Prep completed *** 
+  '
 
 ##Running the script manually
 
