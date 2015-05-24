@@ -9,9 +9,9 @@ This codebook describes the structure and orgins of the variables contained in
 the file avgVarGrouped.txt and also explains the companion file 
 avgVarGrouped_Dict.txt.
 
-avgVarGrouped.txt and the file avgVarGrouped_Dict.txt are the result of a data extract and cleaning script called run_analysis.R. This R script does the following steps:
+avgVarGrouped.txt and the file <avgVarGrouped_Dict.txt> are the result of a data extract and cleaning script called run_analysis.R. This R script does the following steps:
 
-1. Downloads the file 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip' into the working directory
+1. Downloads the file <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip> into the working directory
 2. Unpacks the file into a directory called 'UCI HAR Dataset' in the working directory
 3. The 'UCI HAR Dataset' directory contains a number of files relating to the data collected for 'Human Activity Recognition Using Smartphones' experiment conducted by the following 
 	Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
@@ -25,7 +25,7 @@ The directory contains both 'test' and 'train' data in seperate sub-directories
 
 ##avgVarGrouped.txt - variables description
 
-Number of variables in the file = 68
+Number of variables in the file = 68  
 Format of file: text, with fields delimited by "" and separated by spaces
 
 #####Subject_ID  
@@ -43,7 +43,9 @@ Format of file: text, with fields delimited by "" and separated by spaces
 		LAYING
 
 #####AVG-tBodyAcc.mean...X	
-	The average of the Mean value of X axis measurements of Body Acceleration. Time domain  signals used. Averaging done by Subject ID and Activity.Description. Original variable name from Source data is -- tBodyAcc-mean()-X
+	The average of the Mean value of X axis measurements of Body Acceleration. 
+	Time domain  signals used. Averaging done by Subject ID and Activity.Description.  
+	Original variable name from Source data is -- tBodyAcc-mean()-X  
 	Type: numeric 
 
 #####AVG-tBodyAcc.mean...Y	
