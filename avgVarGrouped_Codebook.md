@@ -23,10 +23,15 @@ avgVarGrouped.txt and the file <avgVarGrouped_Dict.txt> are the result of a data
 The directory contains both 'test' and 'train' data in seperate sub-directories
 4. The script assembles a data file from each of the 'train' and 'test' locations, and then combines the files into a tidy data set called avgVarGrouped.txt
 
+__Read the README.MD file to get detailed instructions on how to run the run_analysis.r script.__
+
+
 ##avgVarGrouped.txt - variables description
 
 Number of variables in the file = 68  
-Format of file: text, with fields delimited by "" and separated by spaces
+Format of file: text, with fields delimited by "" and separated by spaces   
+The original variable name refers to the variable name taken from the test or tran datasets from the original data.
+The original names have been altered to ensure they are valid R column names. Primarily any '-' and brackets are replaced with ellipses '.'
 
 #####Subject_ID  
 	A identifier of the subject who performed the experiment
