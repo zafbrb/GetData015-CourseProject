@@ -33,6 +33,12 @@ Format of file: text, with fields delimited by "" and separated by spaces
 The original variable name refers to the variable name taken from the test or tran datasets from the original data.
 The original names have been altered to ensure they are valid R column names. Primarily any '-' and brackets are replaced with ellipses '.'
 
+Reading the avgVarGrouped.txt in R 
+
+```R
+df <- read.table("avgVarGrouped.txt", sep=" ", header=TRUE, stringsAsFactors=FALSE)
+```
+
 #####Subject_ID  
 	A identifier of the subject who performed the experiment
 	Integer - range [1 to 30]	

@@ -300,8 +300,8 @@ myDictionary[,2] <- nameVector[3:length(nameVector)]
 ## ---------------------------------------------------------------------------------
 # Write the final data set out to a file 
 ## ---------------------------------------------------------------------------------
-write.table(avgVarGrouped, "avgVarGrouped.txt")
-write.table(myDictionary, "avgVarGrouped_Dict.txt") 
+write.table(avgVarGrouped, "avgVarGrouped.txt", row.name=FALSE)
+write.table(myDictionary, "avgVarGrouped_Dict.txt", row.name=FALSE) 
 
 cat("[E] Tidy dataset avgVarGrouped created containing avg of variables by Subject and activity ID", "\n")
 cat("[E] avgVarGrouped - ", nrow(avgVarGrouped), "rows and", ncol(avgVarGrouped), "cols", "\n\n")
