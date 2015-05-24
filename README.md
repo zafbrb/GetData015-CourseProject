@@ -19,7 +19,7 @@ In order to run this analysis you will need **R version 3.1.2  or greater**, as 
 5. Two files will be created by this script into the working directory
 	a. _avgVarGrouped.txt_ containing the analysis dataset
 	b. __avgVarGrouped_Dict.txt__ containing the mapping between the original dataset variables names and the ones created by the analysis
-6. The codebook __"avgVarGrouped_Codebook.txt"__ explains the variables created by the analysis script.
+6. The codebook __"avgVarGrouped_Codebook.md"__ explains the variables created by the analysis script.
 
 
 ##Functions created
