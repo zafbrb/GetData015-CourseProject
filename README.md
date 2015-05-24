@@ -14,7 +14,7 @@ In order to run this analysis you will need **R version 3.1.2  or greater**, as 
 ##Instructions
 1. Copy the **run_Analysis.R** to your R working directory
 2. From R - select "file -> Source R Code..." and choose the **run_analysis.R file**
-3. From RStudio select "Open File" -> and choose the **run_analysis.R** file. The file will load into the editor window. Click on Source button and the script will be loaded and run 
+3. From RStudio select "Open File" -> and choose the **run_analysis.R** file. The file will load into the editor window. Click on Source button and the script will be loaded and run
 4. This will run the script - this script will load the data from the internet and run the analysis. The data downloaded will be a ZIP file [59.7 MB in size] which will be unpacked into the working directory
 5. Two files will be created
 	a. _avgVarGrouped.txt_ containing the analysis dataset
@@ -27,7 +27,6 @@ The following functions are created by the run_analysis.r script
 
 ###Getfile(datasetDir, fileName, colnames)
 This function is a wrapper for read.table(). Its job is to read a file from disk and return it as a data.frame
-	
 #####Parameters
        datasetDir: Directory from which will read
        fileName: filename to be read in
@@ -52,13 +51,12 @@ This function does the bulk of the data manipulation steps. processData() is cal
        dictionary: dictionary object created in calling environment - makeDictionary()
        debug: TRUE or FALSE - if TRUE will output diagnostic messages to the console
 
-
 ###makeDictionary()
 The original data variables used in the study do not contain valid variables names for R. We have to make the names valid using the make.names() function. We use the dictionary to record the original variable name and the new valid R name that is used in our processing steps. This dictionary uses the global variable technique to allow the script to accumulate the dictionary data for each call to _processData()_
 
 #####Parameters 
 	None
-    
+ 
     The dictionary structure is 
     * Feature.Variable.Names -> Original variable names from features.txt
     * Fixed.Variable.Names -> Variables name used for this analysis 
