@@ -27,7 +27,8 @@ The following functions are created by the run_analysis.r script
 
 ###Getfile(datasetDir, fileName, colnames)
 This function is a wrapper for read.table(). Its job is to read a file from disk and return it as a data.frame
-	####Parameters
+	
+#####Parameters
        datasetDir: Directory from which will read
        fileName: filename to be read in
        colnames: Optional - vector of column names
@@ -45,7 +46,7 @@ This function does the bulk of the data manipulation steps. processData() is cal
 	7. Adds a source data identifier column to the dataset containing eithier "test" or "train"
 	8. Returns a tidy dataset  
 
-	####Parameters:
+#####Parameters:
        type: "train" or "test"
        baseDir: character string containg the base directory name for the source data
        dictionary: dictionary object created in calling environment - makeDictionary()
@@ -55,7 +56,7 @@ This function does the bulk of the data manipulation steps. processData() is cal
 ###makeDictionary()
 The original data variables used in the study do not contain valid variables names for R. We have to make the names valid using the make.names() function. We use the dictionary to record the original variable name and the new valid R name that is used in our processing steps. This dictionary uses the global variable technique to allow the script to accumulate the dictionary data for each call to _processData()_
 
-	####Parameters: 
+#####Parameters 
 	None
     
     The dictionary structure is 
@@ -63,7 +64,7 @@ The original data variables used in the study do not contain valid variables nam
     * Fixed.Variable.Names -> Variables name used for this analysis 
     * Type -> source of the variables names
 
-	####Usage: 
+#####Usage: 
     * x <- makeDictionary() will create a dictionary object x
     * x$getDict() will return the dictionary data
     * x$appendDict(dictionary) will append dictionary to the global dictionary
@@ -74,12 +75,12 @@ The original data variables used in the study do not contain valid variables nam
 The script starts after the comment line ##-----Start of main script ------
 
 1. Loads all required library's
-- library(plyr)
-- library(dplyr)
-- library(stringi)
-- library(stringr)
-- library(tidyr)
-- library(sqldf)
+  - library(plyr)
+  - library(dplyr)
+  - library(stringi)
+  - library(stringr)
+  - library(tidyr)
+  - library(sqldf)
 2. Creates a global dictionary object that will be used to record the original variables names and the changed variable names
 3. Sets the variable 'skip.load' to FALSE. This ensures the original data will be loaded from the internet as a ZIP file and then unpacked into the directory **"UCI HAR Dataset"**. If you set this to TRUE the script will not attempt to load the ZIP file from the internet. This is a large file (57.9 MB) and takes a while to load
 4. Calls processData() to process eithier train or test data files. The return is a tidy dataset of all the keep variables (std and mean) along with an Activity_ID and Subject_ID.  
