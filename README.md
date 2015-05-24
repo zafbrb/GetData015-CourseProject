@@ -16,9 +16,9 @@ In order to run this analysis you will need **R version 3.1.2  or greater**, as 
 2. From R - select "file -> Source R Code..." and choose the **run_analysis.R file**
 3. From RStudio select "Open File" -> and choose the **run_analysis.R** file. The file will load into the editor window. Click on Source button and the script will be loaded and run
 4. This will run the script - this script will load the data from the internet and run the analysis. The data downloaded will be a ZIP file [59.7 MB in size] which will be unpacked into the working directory
-5. Two files will be created
+5. Two files will be created by this script into the working directory
 	a. _avgVarGrouped.txt_ containing the analysis dataset
-	b. _avgVarGrouped_Dict.txt_ containing the mapping between the original dataset variables names and the ones created by the analysis
+	b. __avgVarGrouped_Dict.txt__ containing the mapping between the original dataset variables names and the ones created by the analysis
 6. The codebook __"avgVarGrouped_Codebook.txt"__ explains the variables created by the analysis script.
 
 
@@ -86,8 +86,8 @@ The script starts after the comment line ##-----Start of main script ------
 6. Creates a new dataset that is a mean of each of the columns by Activity and Subject. 
 7. Changes the name of the columns to prefix "AVG-" to the names
 8. Updates the dictionary
-9. Writes out the tidy dataset "avgVarGrouped.txt" to disk 
-10. Writes out the dataset "avgVarGrouped_Disct.txt" to disk
+9. Writes out the tidy dataset "avgVarGrouped.txt" to disk
+10. Writes out the dataset "avgVarGrouped_Dict.txt" to disk
 
 The script will write progress messages to the console
 
@@ -95,5 +95,8 @@ The script will write progress messages to the console
 
 
 ##Running the script manually
+
+* Make sure the variable skip.load is set to FALSE if you wish NOT to relaod the ZIP file
+* Follow the steps in the main script file
 
 
